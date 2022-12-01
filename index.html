@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            background-color: #ffffff;
+            top: 0;
+        }
+
+        .header-logo{
+            display: flex;
+            align-items: center;
+            margin: 40px;
+            height: auto;
+        }
+
+        .navbar{
+            flex-grow: 1;
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+            padding: 20px;
+            justify-content: space-evenly;
+            height: 5vh;
+            align-items: center;
+            font-weight: 700;
+            font-size: large;
+        }
+
+        .imgclass{
+            display: flex;
+            align-items: center;
+            margin: auto;
+            height: 60px;
+        }
+
+        .logowrap{
+            display: flex;
+            justify-content: center;
+            flex-grow: 7;
+            justify-content: left;
+            margin-left: 30px;
+        }
+
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .headline-1{
+            height: 9vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: xx-large;
+            padding-top: 130px;
+        }
+
+        .hero-section{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px;
+            padding: 50px;
+            background-color: #f2b880;
+            height: 45vh;
+            width: 130vh;
+            border-radius: 20px;
+        }
+
+        .imgclasstwo{
+            height: 30vh;
+            margin: 20px;
+            box-shadow: -22px -21px 0px 0px #e88121;
+        }
+
+        .hero-text{
+            margin: 30px;
+            width: 400px;
+        }
+
+        .herowrap{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .text-wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 70vh;
+            justify-content: space-evenly;
+            margin: auto;
+            padding-top: 100px;
+        }
+
+        .sipka{
+            height: 60px;
+        }
+
+        .top-link-wrapper{
+            display: flex;
+            justify-content: right;
+            position: fixed; 
+            bottom: 0;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="logowrap">
+                <div class="header-logo">
+                    <img class="imgclass" img src="./images/logo_size_invert.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="nav-item">Item</div>
+                <div class="nav-item">Item</div>
+                <div class="nav-item">Item</div>
+            </nav>
+        </header>
+
+        <div class="headline-1">
+            <h1>Hello World</h1>
+        </div>
+
+        <div class="herowrap">
+            <section class="hero-section">
+                <div class="hero-img">
+                    <img class= "imgclasstwo" img src="./images/hero-small.jpg" alt="Hero">
+                    <div class="img-placeholder"></div>
+                </div>
+                <div class="hero-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis repellendus quidem mollitia
+                        ratione? Commodi quia consectetur quae recusandae at blanditiis architecto alias, ab explicabo quas
+                        labo rum aspernatur dolore tempore obcaecati!</p>
+                </div>
+            </section>
+        </div>
+        <section class="text">
+            <div class="text-wrapper">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae veniam ex, quas autem neque facere
+                    quaerat
+                    nobis repellendus rem, omnis ipsam dolor minus qui ad accusamus natus laborum officiis nostrum.</p>
+                <p>Itaque, odio. Vitae libero iusto, incidunt voluptate, cumque possimus accusantium animi tempore atque
+                    asperiores ut, perferendis illum. Est, asperiores ullam similique ea facere animi quidem a
+                    cupiditate,
+                    magnam architecto nihil?</p>
+                <p>Rem asperiores animi cupiditate quam dolor eum dolores atque iste. Soluta iusto sit quos ullam
+                    officia
+                    neque, nemo facere dolorem. Molestias praesentium asperiores ipsum magni. Deleniti suscipit vitae
+                    facilis minima.</p>
+                <p>Veritatis iste laboriosam distinctio deleniti placeat eos repellendus ut praesentium esse.
+                    Dignissimos
+                    nostrum vel tempore inventore praesentium, quia eveniet nemo earum id unde enim soluta quod at cum
+                    quisquam dolorem.</p>
+                <p>Quam doloribus vero qui quo aperiam dolor odit debitis eos tenetur illo laudantium veritatis ducimus
+                    ex
+                    temporibus quia at aspernatur quidem, fugit delectus rem id beatae repudiandae maiores itaque. Ut.
+                </p>
+                <p>Pariatur rem quas accusamus, architecto tempora voluptate in est asperiores aperiam autem magnam
+                    provident officia facere doloremque aut quo. Sequi quos fuga necessitatibus. Expedita blanditiis sed
+                    ipsum nam at corporis.</p>
+                <p>Non laudantium illo minus dolor corrupti esse quis consequuntur placeat quae quisquam, magnam
+                    aspernatur
+                    porro ad ducimus autem vitae, repellendus molestias? Facere eum, itaque officiis nemo vero animi
+                    corporis ad.</p>
+                <p>Deleniti earum facere harum natus illo sed veniam voluptas dignissimos at dolorum quos perferendis
+                    repellat fugiat adipisci unde aliquam aspernatur doloribus, autem soluta. Voluptatibus illum
+                    consequatur
+                    praesentium, est harum non!</p>
+                <p>Omnis nisi ad, autem deserunt distinctio sunt, mollitia consectetur, sit illo ratione nulla eligendi!
+                    Saepe molestiae cumque sapiente magni, eius dolor quia dolore illo voluptatem omnis quaerat incidunt
+                    excepturi dolorem.</p>
+                <p>Amet ipsa ut deserunt incidunt tenetur! Cum fuga iusto accusamus atque quas nesciunt nostrum ea error
+                    quo
+                    sed tenetur, repudiandae cumque aspernatur debitis minus eius sunt cupiditate. Autem, eaque quod.
+                </p>
+                <p>Quasi porro autem rerum dolor veritatis aperiam fugiat accusantium vitae eaque pariatur maxime libero
+                    soluta cum, expedita fugit explicabo dicta suscipit assumenda modi sunt. Dolorem accusamus nisi
+                    possimus
+                    perferendis natus!</p>
+                <p>Laboriosam laborum, nam id dolorum laudantium error vitae qui eligendi iste ab sunt voluptate
+                    distinctio
+                    iure quae obcaecati illum minima accusamus culpa. Ex, repellat eveniet. Deserunt placeat illum
+                    tempore!
+                    Dolorum.</p>
+            </div>
+        </section>
+
+        <div class="top-link-wrapper">
+            <div class="top-link">
+                <a href="#">
+                    <img class = "sipka" img src="./images/up-arrow.png" alt="Ikona">
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
